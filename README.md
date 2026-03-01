@@ -1,7 +1,7 @@
 # eNO Wearable Safety Badge: AI Threat Detection Pipeline
 
 ## 📖 Project Description
-This repository contains the V1 software pipeline for the eNO personal safety wearable. The system utilizes an edge-cloud architecture to process real-time audio from the device. It calculates deterministic acoustic physics (Peak and Average dBFS) and fuses that data with a 3-turn rolling conversational memory buffer. A Large Language Model (GPT-4o-mini) then analyzes both the acoustic signals and semantic context to accurately detect physical and verbal threats, instantly publishing emergency alerts to a local ARC Operator dashboard.
+This repository contains the software pipeline for the audio processing assessment task. It calculates deterministic acoustic physics (Peak and Average dBFS) and fuses that data with a 3-turn rolling conversational memory buffer. A Large Language Model (GPT-4o-mini) then analyzes both the acoustic signals and semantic context to detect threats, instantly publishing emergency alerts to a local ARC Operator dashboard.
 
 ---
 
