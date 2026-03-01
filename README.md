@@ -3,6 +3,8 @@
 ## 📖 Project Description
 This repository contains the software pipeline for the audio processing assessment task. It calculates deterministic acoustic physics (Peak and Average dBFS) and fuses that data with a 3-turn rolling conversational memory buffer. A Large Language Model (GPT-4o-mini) then analyzes both the acoustic signals and semantic context to detect threats, instantly publishing emergency alerts to a local ARC Operator dashboard.
 
+![System Architecture](https://github.com/TejasARathod/Eno-Audio/blob/023e0db1e5d62429b75669bbc564d08a97f6cb18/Images/Workflow.png)
+![Performance](https://github.com/TejasARathod/Eno-Audio/blob/023e0db1e5d62429b75669bbc564d08a97f6cb18/Images/Performance.png)
 ---
 
 ## 🚀 How to Run
