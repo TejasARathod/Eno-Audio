@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+
+  safety-service:
+    build: .
+    depends_on:
+      - redis
+    env_file:
+      - .env
+    volumes:
+      - .:/app  # Maps the whole project so you can see all outputs
+    command: python main.py --all
+
+  arc-subscriber:
+    build: .
+    depends_on:
+      - redis
+    volumes:
+      - .:/app  
+    working_dir: /app 
+    command: python subscriber.py

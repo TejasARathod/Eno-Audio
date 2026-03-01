@@ -1,0 +1,17 @@
+# Environments and Keys
+.env
+venv/
+__pycache__/
+
+# Logs and Caches
+api_cache.json
+redis_final_alerts.log
+ai_inputs_debug.jsonl
+
+# Unnecessary files / Scratchpads
+*.ipynb
+Research/
+v1/
+v2/
+v3/
+FE Interview.pdf
