@@ -77,13 +77,22 @@ During early testing, the system acted as an overly sensitive "Safety First" mon
 - Initial loudness threshold: **-10.0 dBFS** → Too sensitive.
 - Optimized threshold: **-3.0 dBFS** → Targets near-clipping distress sounds.
 
+![](https://github.com/TejasARathod/Eno-Audio/blob/3cbbca6f6bb0308fc40f6ec606d92ba19d2b7a4b/Images/-10dBfilter.png)
+![](https://github.com/TejasARathod/Eno-Audio/blob/3cbbca6f6bb0308fc40f6ec606d92ba19d2b7a4b/Images/-3dBfilter.png)
+
 ## Acoustic Feature Integration
 - Added **RMS (Root Mean Square)** alongside Peak dBFS.
 - Differentiates sudden noise spikes from sustained vocal intensity.
 
+![](https://github.com/TejasARathod/Eno-Audio/blob/3cbbca6f6bb0308fc40f6ec606d92ba19d2b7a4b/Images/rmsavg1.png)
+![](https://github.com/TejasARathod/Eno-Audio/blob/3cbbca6f6bb0308fc40f6ec606d92ba19d2b7a4b/Images/rmsavg2.png)
+![](https://github.com/TejasARathod/Eno-Audio/blob/3cbbca6f6bb0308fc40f6ec606d92ba19d2b7a4b/Images/rmsavg3.png)
+
 ## Noise & Smoothing Tests
 - Smoothed audio improved transcription clarity.
 - Raw audio better preserved authentic “shouting” cues for LLM reasoning.
+
+![](https://github.com/TejasARathod/Eno-Audio/blob/3cbbca6f6bb0308fc40f6ec606d92ba19d2b7a4b/Images/noisecheck.png)
 
 ## Prompt Reasoning Refinements
 - Implemented a strict "Evaluation Matrix" that forces the LLM to continuously cross-reference acoustic metrics
