@@ -69,7 +69,7 @@ The pipeline orchestrates five modular components that manage the lifecycle from
 
 ---
 
-# 3️⃣ Data Processing & Threshold Optimization
+# 3️⃣ Data Processing, Threshold and Reasoning Optimization
 
 During early testing, the system acted as an overly sensitive "Safety First" monitor, flagging nearly every audio sample.
 
@@ -84,6 +84,10 @@ During early testing, the system acted as an overly sensitive "Safety First" mon
 ## Noise & Smoothing Tests
 - Smoothed audio improved transcription clarity.
 - Raw audio better preserved authentic “shouting” cues for LLM reasoning.
+
+## Prompt Reasoning Refinements
+- Implemented a strict "Evaluation Matrix" that forces the LLM to continuously cross-reference acoustic metrics
+- Categorized case scenarios for better understanding.
 
 ### Insight
 By tuning dBFS gating and integrating RMS, the system transitioned from overly reactive to highly surgical — significantly reducing false positives while maintaining safety integrity.

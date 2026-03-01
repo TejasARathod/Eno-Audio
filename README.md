@@ -39,3 +39,21 @@ The pipeline will automatically process the test audio corpus. You will see:
 - A final Runtime Performance Summary table  
 
 All output is printed directly in your terminal.
+
+## 📄 Workflow Documentation
+
+For a detailed breakdown of the system architecture, development process, and production safeguards, please refer to the full workflow document:
+
+👉 **[Read the Workflow Documentation](https://github.com/TejasARathod/Eno-Audio/blob/502615f543d8fb7905279a41195e461186b8bb92/workflow.md)**
+
+This document explains the end-to-end pipeline logic, system modules, optimization decisions, and future architectural improvements.
+
+## 📂 Generated Output Files
+
+When the project directory is executed (`docker compose up --build`), the following files are automatically generated:
+
+- **`api_cache.json`**  
+
+- **`redis_final_alerts.log`**  
+
+These files allow you to inspect the AI reasoning outputs and dispatched alerts independently after the pipeline finishes running.
